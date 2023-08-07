@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "sph",
+	"version": "${version}",
+	"name": "Simple Player Heads",
+	"description": "Introduces a command that allows players to acquire player heads.",
+	"authors": [
+		"fliplus"
+	],
+	"contact": {
+		"sources": "https://github.com/fliplus/sph"
+	},
+	"license": "MIT",
+	"icon": "assets/sph/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.fliplus.sph.SphServer"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": ">=1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
