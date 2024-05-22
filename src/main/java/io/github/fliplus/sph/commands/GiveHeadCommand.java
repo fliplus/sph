@@ -38,7 +38,7 @@ public class GiveHeadCommand {
 
     private static int giveHead(CommandSourceStack source, Collection<ServerPlayer> targets, String player, int count) throws CommandSyntaxException {
         for (ServerPlayer serverPlayer : targets) {
-            String giveCommand = String.format("/give %s minecraft:player_head{SkullOwner:\"%s\"} %d", serverPlayer.getName().getString(), player, count);
+            String giveCommand = String.format("/give %s minecraft:player_head[profile=\"%s\"] %d", serverPlayer.getName().getString(), player, count);
             source.getServer().getCommands().performPrefixedCommand(source.getServer().createCommandSourceStack().withSource(source.getPlayer()), giveCommand);
         }
 
