@@ -1,6 +1,6 @@
-package io.github.fliplus.sph;
+package fliplus.sph;
 
-import io.github.fliplus.sph.commands.GiveHeadCommand;
+import fliplus.sph.commands.GiveHeadCommand;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
